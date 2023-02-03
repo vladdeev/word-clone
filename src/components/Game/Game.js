@@ -15,13 +15,13 @@ function Game() {
   const [guesses, setGuesses] = React.useState([]);
 
   const submitGuess = (guess) => {
-    console.log("Submitted guess:", guess);
     const newGuesses = [...guesses, guess];
     setGuesses(newGuesses);
   };
+
   return (
     <>
-      <GuessResults guesses={guesses} />
+      <GuessResults guesses={guesses} answer={answer} />
       <GuessInput submitGuess={submitGuess} />
     </>
   );
