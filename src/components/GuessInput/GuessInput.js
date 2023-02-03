@@ -16,6 +16,7 @@ function GuessInput({ submitGuess, disabled }) {
     >
       <label htmlFor={"guess-input"}>Enter guess:</label>
       <input
+        required
         type="text"
         minLength={5}
         maxLength={5}

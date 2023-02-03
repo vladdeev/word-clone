@@ -1,2 +1,2 @@
-export * from "./SearchTerm";
-export { default } from "./SearchTerm";
+export * from "./GuessInput";
+export { default } from "./GuessInput";
